@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Imagens/Semaforo FavIcon.png   " type="image/x-icon">
+    <title>Semaforo</title>
+    <style>
+    #Semaforo{
+        background-color: #333;
+        width: 100px;
+        height: 300px;  
+        border-radius: 10px;
+        margin: 50px auto;
+        padding: 10px 10px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .luz{
+        background-color: #555;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        transition: background-color 0.5s ease;
+
+    }
+    .botao{
+        margin: 5px;
+        padding: 10px 10px;
+        border: none;
+        background-color: #333;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <div id="Semaforo">
+        <div class="luz" id="vermelha" ></div>
+        <div class="luz" id="amarela" ></div>
+        <div class="luz" id="verde" ></div>
+    </div>
+
+    <div style="text-align: center;">
+        <div class="botao" id="botaoVermelho" >Vermelho</div>
+        <div class="botao" id="botaoAmarelo" >Amarelo</div>
+        <div class="botao" id="botaoVerde" >Verde</div> <br>
+        <div class="botao" id="start">Ligar</div>
+        <div class="botao" id="stop">Desligar </div>
+    </div>
+    <script src="04-exercicio-chat.js" defer></script>
+</body>
+</html>
